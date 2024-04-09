@@ -7,7 +7,8 @@
 }
 
 body, h1, h2 {
-    color: var(--primary-color);
+    color: black;
+    padding: 2px;
 }
 
 p {
@@ -83,7 +84,7 @@ header {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 nav ul li {
@@ -124,7 +125,7 @@ section figure img {
 }
 
 section h2 {
-    color: #4682b4;
+    color: #0689f5;
 }
 section p {
     text-align: center;
@@ -180,4 +181,86 @@ button[type="submit"]:hover {
 }
 h3, h1, legend, label, div {
     color: #0056b3;
+}
+.trip-description {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+.trip-description img {
+    max-width: 100%;
+    height: auto;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid navy;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+}
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+  align-items: center;
+  align-content: center;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 20px 20px;
+  text-align: left;
+  color: black;
+}
+
+td:last-of-type {
+  text-align: center;
+
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+  text-align: left;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+.main-image {
+    text-align: center;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.trips {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+}
+.trip-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.trip-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
